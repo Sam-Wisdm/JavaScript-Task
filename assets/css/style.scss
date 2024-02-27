@@ -1,0 +1,481 @@
+/* Define standard variables and values for website */
+
+// Common
+$universe : 0 ;
+$none : none ;
+$display : flex ;
+$center : center ;
+$direction : column ;
+$justifyContent : space-between ;
+$fullWidth : 100% ;
+$fullHeight : 100% ;
+$halfWidth : 60% ;
+$halfHeight : 50% ;
+$width1 : 70% ;
+$noRepeat : no-repeat ;
+$bgSize : cover ;
+$top : 60px ;
+$bottom : 20px ;
+$textSize : 12px ;
+$headerSize : 35px ;
+$cursor : pointer ;
+$flex : 1 ;
+$inline : inline ;
+$block : block ;
+$margin10 : 10px ;
+$opacity : 0.5 ;
+$uppercase : uppercase ;
+$lineHeight : 1.8 ;
+
+// Logo Varible
+$logoColor : #404040 ;
+$logoFont : 30px ;
+$logoWeight : 500 ;
+$logoFamily : monospace ;
+
+// menu Variable
+$menuFont : 16px ;
+$menuColor : #707070; 
+$menuMargin : 0 8px ;
+$menuPad : 5px ;
+$activeMenuColor : #303030;
+
+$navPad : 30px  ;
+
+//Read More
+$readMoreBgColor : rgba(0,0,0,0.5) ;
+
+// Main Image
+$height : 600px ;
+$height500 : 500px ;
+
+// Date3
+$dateColor : #a9a9a9 ;
+$dateSize : 14px ;
+
+// continue
+$continuefamily : sans-serif ;
+
+//comment
+$commentColor : #b3b3b3 ;
+$commentSize  : 15px ;
+
+//mid
+$whiteColor : white ;
+
+//footer
+$footerBgColor : #303030 ;
+$footerColor : #8b8b8b ;
+$footerSize : 15px ;
+
+
+
+*{
+    margin: $universe;
+    padding: $universe;
+}
+
+.nav{
+    display: $display;
+    align-items: $center;
+    justify-content: $center;
+    padding: $navPad;
+}
+
+.nav-inside{
+    width: $width1 ;
+    display: $display;
+    align-items: $center;
+    justify-content: $justifyContent;
+}
+
+.logo{
+    color: $logoColor;
+    font-size: $logoFont;
+    font-weight: $logoWeight;
+    font-family: $logoFamily;
+    cursor: $cursor;
+    
+}
+
+.menu{
+    list-style-type: $none;
+    text-transform: $uppercase;
+}
+.menu>li{
+    display: $inline;
+}
+
+.menu-link{
+    text-decoration: $none;
+    color: $menuColor;
+    font-size: $menuFont;
+    margin: $menuMargin;
+    padding: $menuPad;
+    font-weight: $logoWeight;
+}
+
+.active{
+    color: $activeMenuColor;
+}
+
+.main{
+    display: $display;
+    align-items: $center;
+    height: $height;
+}
+
+.side{
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $center;
+    width: 20%;
+    height: $fullHeight;
+}
+
+.side-a{
+    width: $fullWidth;
+    height: $halfHeight;
+    background: url('http://media-cache-ec0.pinimg.com/originals/68/61/95/68619527687775e73d3c7837256c9e7f.jpg') $noRepeat $center ;
+    background-size: $bgSize;
+    margin-bottom: $margin10;
+}
+
+.side-b{
+    width: $fullWidth;
+    height: $halfHeight;
+    background: url('https://media.voice.com/files/8d10bbf3441c502cb0cb2f2b71bf0d428e01b374cecb57c7a691c6302208a4a3') $noRepeat $center ;
+    background-size: $bgSize;
+}
+
+.main-mid{
+    display: $display;
+    flex-direction: $direction !important;
+    align-items: $center;
+    justify-content: $center;
+    width: $halfWidth;
+    height: $fullHeight;
+    // background: url('https://www.tripsavvy.com/thmb/FW00bGmyhQ_cHIMw50A00WnTXIU=/2123x1412/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-172596980-5b7d710fc9e77c00503345ba.jpg') $noRepeat $center ;
+    background-size: $bgSize;
+    margin: $universe $margin10;
+    
+}
+
+.slide-arrow{
+    margin: 5px;
+    padding: 10px;
+    cursor: $cursor;
+}
+
+.slide-btn{
+    display: flex;
+    justify-content: flex-end !important;
+    width: 100%;
+    position: relative;
+    top: 120px;
+    align-items: flex-end;
+    margin-right: 25px;
+    padding-right: 10px;
+    margin-top: 50px;
+}
+
+.read-more{
+    width: 90%;
+    background-color: $readMoreBgColor;
+    // opacity: $opacity;
+    
+    color: $whiteColor !important;
+    text-align: $center;
+    padding: 20px 15px;
+}
+
+.head,
+.read-btn{
+    display: $display;
+    justify-content: $center;
+    align-items: $center;
+    font-size: $logoFont;
+    margin-top: $bottom;
+    margin-bottom: $bottom;
+    cursor: $cursor;
+}
+
+.head{
+    font-size: $headerSize !important;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+
+.searchBox{
+    display: $display;
+    // justify-content: $center;
+    align-items: $center;
+    box-shadow: 0 2px 2px 2px #ccc;
+    width: 70%;
+    padding-left: 15px;
+}
+
+.search{
+    
+    padding: 15px;
+    // margin-top: 30px;
+    outline: $none;
+    border: $none;
+
+}
+
+.main-article{
+    display: $display;
+    flex-direction: $direction;
+    width: $fullWidth;
+    justify-content: $center;
+    align-items: $center;
+    margin-bottom: 50px;
+}
+
+.article{
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $center;
+    width: $width1 ;
+    margin-top : $top;
+
+}
+
+.article-heading{
+    margin-bottom: $margin10;
+}
+
+.heading{
+    text-align: $center;
+    font-size: $logoFont;
+    font-weight: $logoWeight;
+    font-family: $logoFamily;
+
+}
+.row{
+    display: $display;
+    align-items: $center;
+    width: $fullWidth;
+}
+
+.col{
+    display: $display;
+    flex-direction: $direction;
+    flex: $flex;
+    width: 50%;
+    margin: $margin10;
+}
+
+.col-a{
+    background: url('http://ift.tt/2fMOYgA') $center $noRepeat;
+    background-size: $bgSize;
+    width: $fullWidth;
+    height: 300px;   
+    margin-bottom: $bottom;
+}
+
+
+.date{
+    color: $dateColor;
+    font-size: $dateSize;
+    margin-bottom: $bottom;
+}
+
+.desc{
+    color: $menuColor;
+    font-family: $logoFamily;
+    font-size: 12px;
+    margin-bottom: $bottom;
+    line-height: $lineHeight;
+}
+
+.continue{
+    font-size: $textSize;
+    font-family: $continuefamily;
+    margin-bottom: $bottom;
+    cursor: $cursor;
+}
+
+.comment{
+    color: $commentColor;
+    font-size: $commentSize;
+}
+
+.row-comment{
+    margin-top: $bottom;
+}
+
+.images{
+    display: $display;
+    align-items: $center;
+    height: 200px;
+    width: $fullWidth;
+}
+
+.slide{
+    background: url('https://tse1.mm.bing.net/th?id=OIP.yfco68RRGuuxWyE9w5iDeQHaEK&pid=Api&P=0&w=302&h=171') $center $noRepeat;
+    background-size: $bgSize;
+    display: $display;
+    flex: $flex;
+    height: $fullHeight;
+}
+
+.up-icon{
+    display: $none;
+}
+
+.navFooter{
+//    position: fixed;
+   left: $universe;
+   bottom: $universe;
+   width: $fullWidth;
+   background-color:$footerBgColor;
+   color: $footerColor;
+   font-size: $footerSize !important;
+   display: $display;
+   align-items: $center;
+   justify-content: $center;
+//    padding: $navPad;
+    padding: 30px $universe;
+}
+
+.menu-icon{
+    display: $none;
+}
+
+.buttom-menu{
+    display: $display;
+    align-items: $center;
+    margin-right: $margin10;
+}
+
+.travel{
+    padding: 6px $universe;
+    width: 100px;
+    text-align: $center;
+    color: #a3a3a3;
+    position: relative;
+    background-color: #fafafa;
+    left: 40%;
+    top: 95%;
+  }
+
+
+
+// Media Query
+@media screen and (max-width: 981px) {
+    .menu-icon{
+        display: $block;
+        cursor: $cursor;
+    }
+
+    .nav-menu{
+        display: $none;
+    }
+
+    .nav-inside{
+        width: $fullWidth;
+    }
+    .main{
+      display: $display;
+      flex-direction: $direction;
+      justify-content: $center;
+      width: $fullWidth;
+      height: 1100px;
+    }
+
+    .side{
+        display: $display !important;
+        flex-direction: row;
+        width: $fullWidth;
+        align-items: $center;
+        height: 300px;
+        margin: $margin10 $universe ;
+    }
+
+    .side-a,
+    .side-b{
+        width: $halfWidth;
+        height: $fullHeight;
+        margin: $universe;
+
+    }
+    .side-a{
+        margin-right: $margin10;
+    }
+
+    .main-mid{
+        width: $fullWidth;
+        height: $height500;
+    }
+
+    .article{
+        width: $fullWidth;
+    }
+   
+  }
+
+  
+
+  @media screen and (max-width: 500px) {
+      .side{
+          display: $display;
+          flex-direction: $direction;
+          justify-content: $center;
+          width: $fullWidth;
+      }
+
+      .side-a,
+      .side-b{
+          width: $fullWidth;
+          margin: $universe $universe $margin10 $universe;
+      }
+
+      .row-mobile{
+          display: $display;
+          flex-direction: $direction;
+        //   width: 100%;
+      }
+
+      .col-mobile{
+          width: 90% !important;
+      }
+
+  }
+
+  @media screen and (max-width: 1052px) {
+      .footer-inside{
+        width: $fullWidth !important;
+      }
+
+      .up-icon{
+          display: $block;
+      }
+
+}
+
+@media screen and (max-width: 802px) {
+    .footer-inside{
+        display: $display;
+        flex-direction: $direction;
+        justify-content: $center;
+        align-items: $center;
+    }
+
+    .copyright{
+        margin-bottom:20px ;
+    }
+
+    .menu-link{
+        margin: 0 5px;
+        font-size: 12px;
+    }
+
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>  
+    <title>Beautiful</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="This is HTML-CSS Task" />
+   
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="home.js"></script>
+  
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav-inside">
+            <div class="logo" onclick="logo()">
+                LOGO
+            </div>
+            <div>
+                <ul class="menu nav-menu">
+                    <li><a class="active menu-link" href="#home">Home</a></li>
+                    <li><a class="menu-link" href="#home">SHOP</a></li>
+                    <li><a class="menu-link" href="#home">BLOG</a></li>
+                    <li><a class="menu-link" href="#home">CONTACT US</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-icon">
+                <img src="/public/assets/images/menu.png" width="20px" height="30px">
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="main">
+        <div class="side">
+            <div class="side-a"></div>
+            <div class="side-b"></div>
+
+        </div>
+        <div class="main-mid" id="master">
+
+            <div class="read-more">
+                <p class="head"><b>LIFE IS SO BEAUTIFUL WITH NATURE</b></p>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quis deserunt vero consequatur,
+                    quidem quo sapiente possimus quibusdam quaerat aliquid illo veniam..</P>
+                <div class="read-btn">
+                    <p style="margin-right: 5px;">READ MORE</p>
+                    <img src="/public/assets/images/right-arrow-svgrepo-com.svg" width="25px" height="25px">
+                </div>
+
+            </div>
+            <div class="slide-btn">
+                <div onclick="left()" class="slide-arrow">
+                    <img class="r-arrow" src="/assets/images/right-arrow-svgrepo-com.svg" width="20px" height="20px">
+                </div>
+
+                <div onclick="right()" class="slide-arrow">
+                    <img  class="right-arrow" src="/assets/images/right-arrow-svgrepo-com.svg" width="20px" height="20px">
+                </div>
+             
+            </div>
+        </div>
+        <div class="side">
+            <div class="side-a"></div>
+            <div class="side-b"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="searchBox">
+            <img src="/assets/images/search.svg" width="20px" height="20px">
+            <input class="search" id="search-box" type="search" placeholder="Enter Your Search" oninput="search()">
+        </div>
+    </div>
+    
+
+    <div class="main-article">
+        <div class="article">
+            <div id="all-article" ></div>
+           
+            
+
+        </div>
+
+        <div class="page" id="pagination">
+
+         
+        </div>
+
+        
+    </div>
+
+    
+
+    <div class="navFooter">
+        <div class="nav-inside footer-inside">
+
+            <div class="copyright">
+                Copyright@2021 Wisdmlabs All rights reserved .
+            </div>
+            <div class="buttom-menu">
+                <div>
+                    <ul class="menu">
+                        <li><a class="menu-link" href="#home">Home</a></li>
+                        <li><a class="menu-link" href="#home">SHOP</a></li>
+                        <li><a class="menu-link" href="#home">BLOG</a></li>
+                        <li><a class="menu-link" href="#home">CONTACT US</a></li>
+                    </ul>
+                </div>
+
+                <div class="up-icon">
+                    <img src="/public/assets/images/up-arrow.png" width="30px" height="30px">
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
